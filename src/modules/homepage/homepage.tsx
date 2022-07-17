@@ -1,32 +1,42 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
-import { fileMenuData } from "./proposed-filestruct.data";
-import { oldMenuData } from "./old-filestruct.data";
-
+// components
 import { FileMenu } from "@/components/file-menu";
 
+// static data
+import { fileMenuData } from "./proposed-filestruct.data";
+import { oldMenuData } from "./old-filestruct.data";
+import { Layout } from "@/components/ui/layout/layout";
+
 const Homepage = () => {
+    let { pathname } = useRouter();
+
     return (
         <>
             <Head>
                 <title>Directory structure</title>
             </Head>
 
-            <main className="grid min-h-screen grid-cols-2 p-4 mx-auto my-12 lg:p-8 max-w-7xl">
-                <div>
-                    <h2 className="mb-4 text-lg font-bold lg:text-xl">
-                        Old directory structure
-                    </h2>
-                    <FileMenu data={oldMenuData} />
-                </div>
+            <Layout>
+                <main className="grid grid-cols-2 p-4 lg:my-4 lg:px-8">
+                    <div>
+                        <h2 className="mb-4 text-lg font-bold lg:text-xl">
+                            Old directory structure
+                        </h2>
 
-                <div>
-                    <h2 className="mb-4 text-lg font-bold lg:text-xl">
-                        New directory structure
-                    </h2>
-                    <FileMenu data={fileMenuData} />
-                </div>
-            </main>
+                        <FileMenu data={oldMenuData} />
+                    </div>
+
+                    <div>
+                        <h2 className="mb-4 text-lg font-bold lg:text-xl">
+                            New directory structure
+                        </h2>
+
+                        <FileMenu data={fileMenuData} />
+                    </div>
+                </main>
+            </Layout>
         </>
     );
 };

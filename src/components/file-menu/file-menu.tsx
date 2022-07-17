@@ -1,6 +1,11 @@
 import React from "react";
-import { File, Folder } from "../ui";
+
+// types
 import { IDirStructure } from "@/types/dirStructure";
+
+// components
+import { File } from "@/components/ui/file";
+import { Folder } from "@/components/ui/folder";
 
 interface IFileMenu {
     data: IDirStructure;

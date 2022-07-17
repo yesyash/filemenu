@@ -1,4 +1,4 @@
-import { IDirStructure } from "../../types/dirStructure";
+import { IDirStructure } from "@/types/dirStructure";
 
 export const fileMenuData: IDirStructure = {
     name: "app",
@@ -56,12 +56,12 @@ export const fileMenuData: IDirStructure = {
                     type: "folder",
                     children: [
                         {
-                            name: "github.svg",
+                            name: "github.tsx",
                             type: "file",
                             children: null,
                         },
                         {
-                            name: "menu.svg",
+                            name: "menu.tsx",
                             type: "file",
                             children: null,
                         },
@@ -116,109 +116,125 @@ export const fileMenuData: IDirStructure = {
                     ],
                 },
                 {
-                    name: "components",
+                    name: "ui",
                     type: "folder",
                     children: [
                         {
-                            name: "ui",
+                            name: "header",
                             type: "folder",
                             children: [
                                 {
-                                    name: "header",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "header.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "header.const.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
+                                    name: "index.tsx",
+                                    type: "file",
+                                    children: null,
                                 },
                                 {
-                                    name: "footer",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "footer.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "footer.const.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
+                                    name: "header.tsx",
+                                    type: "file",
+                                    children: null,
                                 },
                                 {
-                                    name: "button",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "button.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "primary-button.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "secondary-button.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "tertiary-button.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
+                                    name: "header.const.ts",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "footer",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.tsx",
+                                    type: "file",
+                                    children: null,
                                 },
                                 {
-                                    name: "cards",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "squad-member.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "new-member.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
+                                    name: "footer.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "footer.const.ts",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "button",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "button.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "primary-button.ts",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "secondary-button.ts",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "tertiary-button.ts",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "cards",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "squad-member.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "new-member.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "layout",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.tsx",
+                                    type: "file",
+                                    children: null,
                                 },
                                 {
                                     name: "layout.tsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "loader",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.tsx",
                                     type: "file",
                                     children: null,
                                 },
@@ -229,6 +245,12 @@ export const fileMenuData: IDirStructure = {
                                 },
                             ],
                         },
+                    ],
+                },
+                {
+                    name: "components",
+                    type: "folder",
+                    children: [
                         {
                             name: "user-contribution",
                             type: "folder",
@@ -244,7 +266,7 @@ export const fileMenuData: IDirStructure = {
                                     children: null,
                                 },
                                 {
-                                    name: "user-contribution.const.ts",
+                                    name: "user-contribution.utils.ts",
                                     type: "file",
                                     children: null,
                                 },
@@ -265,7 +287,7 @@ export const fileMenuData: IDirStructure = {
                                     children: null,
                                 },
                                 {
-                                    name: "user-tasks.const.ts",
+                                    name: "user-tasks.hooks.ts",
                                     type: "file",
                                     children: null,
                                 },

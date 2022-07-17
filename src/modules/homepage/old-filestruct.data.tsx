@@ -1,4 +1,4 @@
-import { IDirStructure } from "../../types/dirStructure";
+import { IDirStructure } from "@/types/dirStructure";
 
 export const oldMenuData: IDirStructure = {
     name: "app",
@@ -586,11 +586,6 @@ export const oldMenuData: IDirStructure = {
         },
         {
             name: "next.config.js",
-            type: "file",
-            children: null,
-        },
-        {
-            name: "tsconfig.json",
             type: "file",
             children: null,
         },
