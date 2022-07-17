@@ -356,6 +356,11 @@ export const fileMenuData: IDirStructure = {
             children: null,
         },
         {
+            name: "next.config.js",
+            type: "file",
+            children: null,
+        },
+        {
             name: "tsconfig.json",
             type: "file",
             children: null,

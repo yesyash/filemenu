@@ -5,17 +5,6 @@ export const oldMenuData: IDirStructure = {
     type: "folder",
     children: [
         {
-            name: "scripts",
-            type: "folder",
-            children: [
-                {
-                    name: "build",
-                    type: "file",
-                    children: null,
-                },
-            ],
-        },
-        {
             name: "storybook",
             type: "folder",
             children: [],
@@ -25,9 +14,14 @@ export const oldMenuData: IDirStructure = {
             type: "folder",
             children: [
                 {
-                    name: "img",
+                    name: "imges",
                     type: "folder",
                     children: [
+                        {
+                            name: "avatar.png",
+                            type: "file",
+                            children: null,
+                        },
                         {
                             name: "rds-logo.png",
                             type: "file",
@@ -36,82 +30,72 @@ export const oldMenuData: IDirStructure = {
                     ],
                 },
                 {
-                    name: "favicon.ico",
-                    type: "file",
-                    children: null,
+                    name: "icons",
+                    type: "folder",
+                    children: [
+                        {
+                            name: "favicon.ico",
+                            type: "file",
+                            children: null,
+                        },
+                    ],
                 },
             ],
-        },
-        {
-            name: "cypress",
-            type: "folder",
-            children: [],
         },
         {
             name: "src",
             type: "folder",
             children: [
                 {
-                    name: "icons",
+                    name: "constants",
                     type: "folder",
                     children: [
                         {
-                            name: "github.svg",
+                            name: "AppConstants.js",
                             type: "file",
                             children: null,
                         },
                         {
-                            name: "menu.svg",
+                            name: "cache-max-age.js",
                             type: "file",
                             children: null,
                         },
                     ],
                 },
                 {
-                    name: "modules",
+                    name: "custom-hooks",
                     type: "folder",
                     children: [
                         {
-                            name: "homepage",
-                            type: "folder",
-                            children: [
-                                {
-                                    name: "index.tsx",
-                                    type: "file",
-                                    children: null,
-                                },
-                                {
-                                    name: "homepage.tsx",
-                                    type: "file",
-                                    children: null,
-                                },
-                                {
-                                    name: "homepage.const.ts",
-                                    type: "file",
-                                    children: null,
-                                },
-                            ],
+                            name: "useFetch.js",
+                            type: "file",
+                            children: null,
+                        },
+                    ],
+                },
+                {
+                    name: "helper-functions",
+                    type: "folder",
+                    children: [
+                        {
+                            name: "action-handlers.js",
+                            type: "file",
+                            children: null,
                         },
                         {
-                            name: "user-profile",
-                            type: "folder",
-                            children: [
-                                {
-                                    name: "index.tsx",
-                                    type: "file",
-                                    children: null,
-                                },
-                                {
-                                    name: "user-profile.tsx",
-                                    type: "file",
-                                    children: null,
-                                },
-                                {
-                                    name: "user-profile.const.ts",
-                                    type: "file",
-                                    children: null,
-                                },
-                            ],
+                            name: "estimated-days.js",
+                            type: "file",
+                            children: null,
+                        },
+                        {
+                            name: "fetch.js",
+                            type: "file",
+                            children: null,
+                        },
+                        {
+                            name: "progressIndicator.js",
+                            type: "file",
+                            children: null,
                         },
                     ],
                 },
@@ -120,210 +104,318 @@ export const oldMenuData: IDirStructure = {
                     type: "folder",
                     children: [
                         {
-                            name: "ui",
+                            name: "designers",
                             type: "folder",
                             children: [
                                 {
-                                    name: "header",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "header.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "header.const.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
-                                },
-                                {
-                                    name: "footer",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "footer.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "footer.const.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
-                                },
-                                {
-                                    name: "button",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "button.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "primary-button.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "secondary-button.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "tertiary-button.ts",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
-                                },
-                                {
-                                    name: "cards",
-                                    type: "folder",
-                                    children: [
-                                        {
-                                            name: "index.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "squad-member.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                        {
-                                            name: "new-member.tsx",
-                                            type: "file",
-                                            children: null,
-                                        },
-                                    ],
-                                },
-                                {
-                                    name: "layout.tsx",
+                                    name: "index.js",
                                     type: "file",
                                     children: null,
                                 },
                                 {
-                                    name: "loader.tsx",
+                                    name: "mock-data.json",
                                     type: "file",
                                     children: null,
                                 },
                             ],
                         },
                         {
-                            name: "user-contribution",
+                            name: "footer",
                             type: "folder",
                             children: [
                                 {
-                                    name: "index.tsx",
+                                    name: "index.js",
                                     type: "file",
                                     children: null,
                                 },
                                 {
-                                    name: "user-contribution.tsx",
-                                    type: "file",
-                                    children: null,
-                                },
-                                {
-                                    name: "user-contribution.const.ts",
+                                    name: "footer-module.scss",
                                     type: "file",
                                     children: null,
                                 },
                             ],
                         },
                         {
-                            name: "user-tasks",
+                            name: "home",
                             type: "folder",
                             children: [
                                 {
-                                    name: "index.tsx",
+                                    name: "index.js",
                                     type: "file",
                                     children: null,
                                 },
                                 {
-                                    name: "user-tasks.tsx",
-                                    type: "file",
-                                    children: null,
-                                },
-                                {
-                                    name: "user-tasks.const.ts",
+                                    name: "home.moduel.scss",
                                     type: "file",
                                     children: null,
                                 },
                             ],
                         },
-                    ],
-                },
-                {
-                    name: "styles",
-                    type: "folder",
-                    children: [
                         {
-                            name: "global.css",
-                            type: "file",
-                            children: null,
-                        },
-                    ],
-                },
-                {
-                    name: "types",
-                    type: "folder",
-                    children: [
-                        {
-                            name: "user-profile-data.ts",
-                            type: "file",
-                            children: null,
-                        },
-                    ],
-                },
-                {
-                    name: "hooks",
-                    type: "folder",
-                    children: [
-                        {
-                            name: "index.tsx",
-                            type: "file",
-                            children: null,
+                            name: "layout",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
                         },
                         {
-                            name: "use-mount-after-fetch.tsx",
-                            type: "file",
-                            children: null,
+                            name: "loader",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "loader.module.scss",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
                         },
-                    ],
-                },
-                {
-                    name: "utils",
-                    type: "folder",
-                    children: [
                         {
-                            name: "index.ts",
-                            type: "file",
-                            children: null,
+                            name: "member-card",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "card-module.scss",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "show-skills.jsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "member-card.stories.jsx",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
                         },
                         {
-                            name: "get-mouse-position.ts",
-                            type: "file",
-                            children: null,
+                            name: "member-profile",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "active-tasks",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "contribution",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "contribution-type",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "mock",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "get-badge.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            name: "member-role-update",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "members",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "new-members",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "not-found-page",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "preview-container",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "social-media-icon",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "UI",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "backdrop",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                        {
+                                            name: "backdrop.moduel.scss",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "modal",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                        {
+                                            name: "modal.moduel.scss",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "navbar",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                        {
+                                            name: "navbar.moduel.scss",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "search-box",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                        {
+                                            name: "search-box.moduel.scss",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                                {
+                                    name: "spinner",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "index.js",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                        {
+                                            name: "spinner.moduel.scss",
+                                            type: "file",
+                                            children: null,
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            name: "user-profile",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
                         },
                     ],
                 },
@@ -332,26 +424,168 @@ export const oldMenuData: IDirStructure = {
                     type: "folder",
                     children: [
                         {
-                            name: "index.tsx",
+                            name: "[id]",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "_app.js",
                             type: "file",
                             children: null,
                         },
                         {
-                            name: "[userId].tsx",
+                            name: "_document.js",
+                            type: "file",
+                            children: null,
+                        },
+                        {
+                            name: "404.js",
+                            type: "file",
+                            children: null,
+                        },
+                        {
+                            name: "index.js",
                             type: "file",
                             children: null,
                         },
                     ],
                 },
                 {
-                    name: "constants.ts",
-                    type: "file",
-                    children: null,
+                    name: "store",
+                    type: "folder",
+                    children: [
+                        {
+                            name: "memebrs",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "members-context.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                                {
+                                    name: "members-reducer.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "search-memebrs",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "search-members-context.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "user",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "index.js",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "index.js",
+                            type: "file",
+                            children: null,
+                        },
+                    ],
+                },
+                {
+                    name: "styles",
+                    type: "folder",
+                    children: [
+                        {
+                            name: "constants",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "__colors.scss",
+                                    type: "file",
+                                    children: null,
+                                },
+                            ],
+                        },
+                        {
+                            name: "global-styles.scss",
+                            type: "file",
+                            children: null,
+                        },
+                        {
+                            name: "layout-styles.module.scss",
+                            type: "file",
+                            children: null,
+                        },
+                        {
+                            name: "variables.scss",
+                            type: "file",
+                            children: null,
+                        },
+                    ],
+                },
+                {
+                    name: "test",
+                    type: "folder",
+                    children: [
+                        {
+                            name: "unit",
+                            type: "folder",
+                            children: [
+                                {
+                                    name: "components",
+                                    type: "folder",
+                                    children: [
+                                        {
+                                            name: "active-task",
+                                            type: "folder",
+                                            children: [
+                                                {
+                                                    name: "index.test.js",
+                                                    type: "file",
+                                                    children: null,
+                                                },
+                                            ],
+                                        },
+                                        {
+                                            name: "member-card",
+                                            type: "folder",
+                                            children: [
+                                                {
+                                                    name: "index.test.js",
+                                                    type: "file",
+                                                    children: null,
+                                                },
+                                            ],
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
                 },
             ],
         },
         {
             name: "package.json",
+            type: "file",
+            children: null,
+        },
+        {
+            name: "next.config.js",
             type: "file",
             children: null,
         },

@@ -2,8 +2,12 @@ import React from "react";
 import { File, Folder } from "../ui";
 import { IDirStructure } from "@/types/dirStructure";
 
-export const FileMenu = ({ data }: { data: IDirStructure }) => {
-    const [isOpen, setIsOpen] = React.useState(false);
+interface IFileMenu {
+    data: IDirStructure;
+}
+
+export const FileMenu: React.FC<IFileMenu> = ({ data }) => {
+    const [isOpen, setIsOpen] = React.useState(data.name === "app");
 
     if (data.type === "file") {
         return <File name={data.name} />;
